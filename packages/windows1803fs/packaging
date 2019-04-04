@@ -4,7 +4,7 @@ trap { $host.SetShouldExit(1) }
 $BOSH_INSTALL_TARGET = Resolve-Path "${env:BOSH_INSTALL_TARGET}"
 
 $image_tag="1803"
-$image_name="cloudfoundrydevelopers/180-test"
+$image_name="cloudfoundrydevelopers/1803-test"
 
 c:\var\vcap\packages\hydrate\hydrate.exe download -image $image_name -tag $image_tag -noTarball -outputDir "$BOSH_INSTALL_TARGET"
 if ($LastExitCode -ne 0) {
